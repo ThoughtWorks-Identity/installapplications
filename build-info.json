@@ -6,9 +6,9 @@
     "ownership": "recommended",
     "postinstall_action": "none",
     "signing_info": {
-        "identity": "Mac Installer: Erik Gomez (XXXXXXXXXXX)",
+        "identity": "ThoughtWorks Deutschland GmbH (V25DK7S622)",
         "timestamp": true
     },
     "suppress_bundle_relocation": true,
-    "version": "1.2.1"
+    "version": "3.9"
 }
