@@ -19,15 +19,15 @@
 		<string>--depnotify</string>
 		<!-- <string>DEPNotifySkipStatus</string> -->
 		<string>Command: Image: /tmp/notebook-computer.png</string>
-		<string>Command: MainTitle: DEV ENV Configuring your ThoughtWorks laptop!</string>
+		<string>Command: MainTitle: Welcome to your new ThoughtWorks laptop!</string>
 		<string>Command: MainText: We're just setting up a few things to help secure your laptop, installing Anti-Virus, and enabling full disk encryption. \n We welcome your feedback on this process :) \n Get in touch - techops-support@thoughtworks.com</string>
-		<!-- <string>Command: WindowTitle: Welcome to your new ThoughtWorks laptop!</string> -->
+		<string>Command: WindowTitle: Welcome to your new ThoughtWorks laptop!</string>
 		<!-- <string>Command: NotificationOn:</string> -->
 		<string>Command: Logout: Please restart now to start the disk encryption process.</string>
 		<!-- <string>Command: Quit: Thanks for using InstallApplications and DEPNotify.</string> -->
 		<!-- <string>Command: WindowStyle: ActivateOnStep</string> -->
 		<string>DEPNotifyPath: /Applications/Utilities/DEPNotify.app</string>
-		<!-- <string>DEPNotifyArguments: -fullScreen</string> -->
+		<string>DEPNotifyArguments: -fullScreen</string>
 		<!-- <string>--reboot</string> -->
 		<!-- <string>--skip-validation</string/> -->
 	</array>
