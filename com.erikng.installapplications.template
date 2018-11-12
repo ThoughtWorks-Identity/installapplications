@@ -23,7 +23,7 @@
 		<string>Command: MainText: We're just setting up a few things to help secure your laptop, installing Anti-Virus, and enabling full disk encryption. \n We welcome your feedback on this process :) \n Get in touch - techops-support@thoughtworks.com</string>
 		<!-- <string>Command: WindowTitle: Welcome to your new ThoughtWorks laptop!</string> -->
 		<!-- <string>Command: NotificationOn:</string> -->
-		<string>Command: Logout: Please restart now to start the disk encryption process.</string>
+		<!--<string>Command: Logout: Please restart now to start the disk encryption process.</string> -->
 		<!-- <string>Command: Quit: Thanks for using InstallApplications and DEPNotify.</string> -->
 		<!-- <string>Command: WindowStyle: ActivateOnStep</string> -->
 		<string>DEPNotifyPath: /Applications/Utilities/DEPNotify.app</string>
