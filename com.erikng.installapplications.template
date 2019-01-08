@@ -17,20 +17,8 @@
 		<!-- <string>--ldidentifier</string> -->
 		<!-- <string>com.erikng.installapplications</string> -->
 		<string>--depnotify</string>
-		<!-- <string>DEPNotifySkipStatus</string> -->
-		<string>Command: Image: /tmp/notebook-computer.png</string>
-		<string>Command: Help: https://sites.google.com/thoughtworks.com/techops-hub/device-management</string>
-		<string>Command: MainTitle: Securing your ThoughtWorks laptop!</string>
-		<string>Command: MainText: We're just setting up a few things to help secure and register your laptop, including ensuring you have anti-virus installed, and full disk encryption enabled.  \n \n Questions? Click the '?' icon to visit our Device Management hub page. \n Comments? Come and find us in the 'MDM Q&A' room in Google Chat. \n Problems? Raise a ticket - techops-support@thoughtworks.com</string>
-		<!-- <string>Command: WindowTitle: Welcome to your new ThoughtWorks laptop!</string> -->
-		<!-- <string>Command: NotificationOn:</string> -->
-		<!--<string>Command: Logout: Please restart now to start the disk encryption process.</string> -->
-		<!-- <string>Command: Quit: Thanks for using InstallApplications and DEPNotify.</string> -->
-		<!-- <string>Command: WindowStyle: ActivateOnStep</string> -->
 		<string>DEPNotifyPath: /Applications/Utilities/DEPNotify.app</string>
 		<!-- <string>DEPNotifyArguments: -fullScreen</string> -->
-		<!-- <string>--reboot</string> -->
-		<!-- <string>--skip-validation</string/> -->
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
