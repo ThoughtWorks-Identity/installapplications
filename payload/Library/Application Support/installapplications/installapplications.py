@@ -25,6 +25,8 @@
 # https://github.com/munki/munki
 # Notice a pattern?
 
+
+
 from distutils.version import LooseVersion
 from Foundation import NSLog
 from SystemConfiguration import SCDynamicStoreCopyConsoleUser
@@ -42,9 +44,17 @@ import urllib
 sys.path.append('/usr/local/installapplications')
 # PEP8 can really be annoying at times.
 import gurl  # noqa
+sys.path.append('/tmp')
+from logtoSumo import logtoSumo
 
 
 g_dry_run = False
+
+def my_serial():
+    global serial_number
+    serial_number = [x for x in [subprocess.Popen("system_profiler SPHardwareDataType |grep -v tray |awk '/Serial/ {print $4}'", shell=True, stdout=subprocess.PIPE).communicate()[0].strip()] if x]
+
+    return serial_number
 
 
 def deplog(text):
@@ -54,6 +64,7 @@ def deplog(text):
 
 
 def iaslog(text):
+    logtoSumo(serial_number, text)
     NSLog('[InstallApplications] ' + text)
 
 
@@ -359,6 +370,8 @@ def cleanup(iapath, ialdpath, ldidentifier, ialapath, laidentifier, userid,
 
 
 def main():
+
+    serial_number = my_serial()[0]
     # Options
     usage = '%prog [options]'
     o = optparse.OptionParser(usage=usage)
