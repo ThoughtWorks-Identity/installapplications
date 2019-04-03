@@ -44,7 +44,7 @@ import urllib
 sys.path.append('/usr/local/installapplications')
 # PEP8 can really be annoying at times.
 import gurl  # noqa
-sys.path.append('/tmp')
+sys.path.append('/tmp/logging')
 from logtoSumo import logtoSumo
 
 
