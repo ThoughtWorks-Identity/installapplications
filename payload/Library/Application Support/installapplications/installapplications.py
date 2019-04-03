@@ -371,7 +371,7 @@ def cleanup(iapath, ialdpath, ldidentifier, ialapath, laidentifier, userid,
 
 def main():
 
-    serial_number = my_serial()[0]
+    serial_number = "TESTSERIAL"
     # Options
     usage = '%prog [options]'
     o = optparse.OptionParser(usage=usage)
