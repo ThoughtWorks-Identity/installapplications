@@ -598,7 +598,7 @@ def main():
                             os.makedirs(mlogpath, 0755)
                         if not os.path.isfile(mlogfile):
                             touch(mlogfile)
-                    if len(depnotifyarguments) >= 2n:
+                    if len(depnotifyarguments) >= 2:
                         totalarguments = []
                         splitarguments = depnotifyarguments.split(' ')
                         for x in splitarguments:
