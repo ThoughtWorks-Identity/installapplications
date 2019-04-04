@@ -48,13 +48,13 @@ sys.path.append('/tmp/logging')
 from logtoSumo import logtoSumo
 
 
+
 g_dry_run = False
+serial_number = ""
 
 def my_serial():
-    global serial_number
-    serial_number = [x for x in [subprocess.Popen("system_profiler SPHardwareDataType |grep -v tray |awk '/Serial/ {print $4}'", shell=True, stdout=subprocess.PIPE).communicate()[0].strip()] if x]
 
-    return serial_number
+    return [x for x in [subprocess.Popen("system_profiler SPHardwareDataType |grep -v tray |awk '/Serial/ {print $4}'", shell=True, stdout=subprocess.PIPE).communicate()[0].strip()] if x]
 
 
 def deplog(text):
@@ -371,7 +371,7 @@ def cleanup(iapath, ialdpath, ldidentifier, ialapath, laidentifier, userid,
 
 def main():
 
-    serial_number = "TESTSERIAL"
+    serial_number= my_serial()[0]
     # Options
     usage = '%prog [options]'
     o = optparse.OptionParser(usage=usage)
