@@ -45,8 +45,7 @@ sys.path.append('/usr/local/installapplications')
 # PEP8 can really be annoying at times.
 import gurl  # noqa
 sys.path.append('/tmp/logging')
-from logtoSumo import logtoSumo
-
+import logtoSumo
 
 
 g_dry_run = False
@@ -64,7 +63,7 @@ def deplog(text):
 
 
 def iaslog(text):
-    logtoSumo(text)
+    logtoSumo.logtoSumo(text)
     NSLog('[InstallApplications] ' + text)
 
 
