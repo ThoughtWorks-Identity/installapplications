@@ -370,7 +370,7 @@ def cleanup(iapath, ialdpath, ldidentifier, ialapath, laidentifier, userid,
 
 
 def main():
-
+    global serial_number
     serial_number= my_serial()[0]
     # Options
     usage = '%prog [options]'
