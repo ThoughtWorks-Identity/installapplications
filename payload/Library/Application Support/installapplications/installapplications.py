@@ -64,7 +64,7 @@ def deplog(text):
 
 
 def iaslog(text):
-    logtoSumo(serial_number, text)
+    logtoSumo(text)
     NSLog('[InstallApplications] ' + text)
 
 
@@ -409,6 +409,10 @@ def main():
         global g_dry_run
         g_dry_run = True
 
+    #initialise SumoLogicLogger
+
+    logtoSumo.init_handler(serial_number)
+
     # Check for root and json url.
     if opts.jsonurl:
         jsonurl = opts.jsonurl
@@ -594,7 +598,7 @@ def main():
                             os.makedirs(mlogpath, 0755)
                         if not os.path.isfile(mlogfile):
                             touch(mlogfile)
-                    if len(depnotifyarguments) >= 2:
+                    if len(depnotifyarguments) >= 2n:
                         totalarguments = []
                         splitarguments = depnotifyarguments.split(' ')
                         for x in splitarguments:
